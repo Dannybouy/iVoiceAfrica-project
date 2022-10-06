@@ -1,0 +1,169 @@
+/* font-family: 'Inter', sans-serif;
+font-family: 'Rasa', serif;
+font-family: 'Open Sans', sans-serif; */
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+    --icon-color:hsla(11, 75%, 52%, 1);
+    --text-color:hsla(214, 41%, 16%, 0.94);
+}
+
+body {
+    font-family: 'Open Sans', sans-serif; 
+}
+
+h2,h3,h4,p,a {
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+      font-family: 'Rasa', serif;
+      font-size: 2.8rem;
+      font-weight: 600;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.sidebar-header {
+    width: 20%;
+}
+
+.sidebar-header i { 
+   margin-left: 1.5em;
+   background-color:rgba(255, 215, 6, 0.15);
+   border-radius: 30px;
+   color: var(--icon-color);
+   padding: .3em;
+
+}
+
+
+.sidebar-header a {
+    margin-left: 4em;
+}
+
+.sidebar-header-2 {
+    width: 75%;
+}
+
+.sidebar-header-2 input {
+    width:537px;
+    height: 50px;
+    border-radius: 30px;
+    background-color: #f9f9f9;
+    position: relative;
+    padding-left: 3em;
+}
+
+.sidebar-header-2 .bx-search {
+    position: absolute;
+    color: rgba(24, 39, 58, 0.6);
+    z-index: 99;
+    top:30%;
+    margin-left: .8em;
+    width: 24px;
+    height: 24px;
+
+}
+
+.sidebar-header-2 div > div span{
+    display: block;
+    font-size: .8em;
+    color: var(--text-color);
+    text-align: center;
+}
+.sidebar-header-2 div > div i{
+    color: var(--icon-color);
+}
+
+.sidebar {
+    width: 320px;
+    height: 100vh;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.06);
+    font-family: 'Inter', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 500;
+    
+}
+
+.sidebar .sidebar-items {
+    padding: 1em 1.5em;
+    list-style: none;
+    position: relative;
+}
+
+.sidebar .sidebar-items li {
+    padding: .5em 1em;
+}
+
+.sidebar .sidebar-items li:hover,
+.sidebar .sidebar-items li:focus,
+.sidebar .sidebar-items li:active {
+    background: rgba(249, 249, 249, 1);
+    border-radius: 20px;
+
+}
+
+.sidebar .sidebar-items li a {
+    text-decoration: none;
+    margin-left: 1em;
+    color: var(--text-color);
+}
+.sidebar .sidebar-items li i {
+    color: var(--icon-color);
+
+}
+
+.sub-menu {
+    display: none;
+    
+}
+
+.dropdown_down {
+    display:none;
+}
+
+.active {
+    display: block;
+}
+.sub-item{
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1.125rem;
+    font-weight: 400;
+    display: block;
+    padding: 12px 12px 12px 65px;
+}
+
+.sub-item:hover,
+.sub-item:focus,
+.sub-item:active {
+    background: rgba(255, 215, 6, 0.15);
+    color: var(--text-color);
+    border-radius: 30px;
+}
+
+.dropdown {
+    position:absolute;
+    right: 0;
+    margin-right: 5em;
+    transition: 0.3s ease;
+}
+
+
+
+
+
+
+
