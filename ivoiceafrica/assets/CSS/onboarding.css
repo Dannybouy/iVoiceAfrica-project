@@ -1,7 +1,3 @@
-/* font-family: 'Inter', sans-serif;
-font-family: 'Rasa', serif;
-font-family: 'Open Sans', sans-serif; */
-
 @font-face {
   font-family: "Open Sans";
   font-style: 400;
@@ -692,6 +688,27 @@ textarea {
   display: block;
 }
 
+.client-sex-select {
+  display: block;
+  width: 100%;
+  color: hsla(214, 50%, 22%, 0.26);
+  font-size: 1.125rem;
+  padding: 15px 17px;
+}
+
+.client-flag-select {
+  width: 40%;
+  padding: 15px 17px;
+}
+
+.label-text_accent {
+  font-family: var(--title-font-family);
+  font-size: var(--title-medium-fontsize);
+  font-weight: 600;
+  color: hsla(215, 41%, 18%, 0.72);
+
+}
+
 /* Client image upload for profile picture */
 .client-upload {
   height: 300px;
@@ -705,7 +722,7 @@ textarea {
   border: 3px solid #000000;
 }
 .client-upload > label {
-  position: absolute;
+  position: relative;
   left: 60%;
   top: 68%;
 }
@@ -716,6 +733,81 @@ textarea {
   top: 30%;
 }
 
+
+
 #profile-picture {
   display: none;
+}
+
+
+@media (max-width: 576px) {
+  .onboard-section {
+    padding: 2em;
+    width: 100%;
+    height: 100%;
+  }
+
+  .onboard-container h2 {
+    font-family: var(--display-body-font-family);
+    font-weight: 600;
+  }
+
+  .Freelance-box {
+    width: 100%;
+    margin-bottom: 2em;
+    padding: 2em 1em;
+  }
+
+  .button {
+    width: 100%;
+    padding: 15px 17px;
+  }
+
+  .onboarding-forms {
+    width: 100%;
+    padding: 2em;
+  }
+
+  .form-container {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .form-section {
+    width: 100%;
+    padding: 1em;
+    margin: 0;
+  }
+  .form-header {
+    margin: 0;
+  }
+  .form-header-title {
+    font-size: 2rem;
+    margin-bottom: .5em;
+  }
+
+  .form-header-text {
+    margin-bottom: 2em;
+  }
+
+  .form-outline {
+    display: none;
+  }
+
+  .form {
+    width: 100%;
+    margin: 0;
+  }
+
+  .freelancer-details {
+    display: block;
+    width: 100%;
+  }
+
+  .services-offer-btn {
+    margin-top: 1em;
+  }
+  .services-offer-btn button{
+    width: 30%;
+  }
 }

@@ -68,7 +68,7 @@
           <div class="modal-content">
             <div class="modal-header d-block text-center border-0">
               <img
-                src="assets/ivoiceafrica logo 2.png"
+                src="assets/images/ivoiceafrica logo 2.png"
                 alt="ivoiceafrica-logo"
                 class="mb-3"
               />
@@ -187,56 +187,95 @@
           </p>
         </div>
         <div class="form multistep active-card">
-          <div class="input-group">
-            <label for="location">Where are you based?</label>
-            <input
-              type="text"
-              name="location"
-              id="location"
-              placeholder="Search to find your country"
-              required
-            />
-          </div>
-          <div class="input-group">
-            <label for="country">What is your nationality?</label>
-            <input
-              type="text"
-              name="country"
-              id="country"
-              placeholder="Search to find your country"
-            />
-          </div>
+          <label for="" class="mb-3">Tell us your name</label>
 
-          <label>What's your address?</label>
-
-          <div class="fields">
-            <div class="input-field">
-              <label for="street">Street</label>
-              <input type="text" name="street" id="street" />
-            </div>
-            <div class="input-field">
-              <label for="town">Town/Village</label>
-              <input type="text" name="town" id="town" />
-            </div>
-          </div>
-          <div class="input-group-3 input-group">
-            <label for="postal" class="location">Postal code</label>
-            <input type="text" name="postal" id="postal" class="location" />
-          </div>
-          <div class="input-group-4">
-            <label for="number">Phone Number</label>
-            <div>
-              <select class="me-3" name="flag" id="flag">
-                <option value="selected">NGN</option>
-                <option value="">USD</option>
-                <option value="">GBP</option>
-              </select>
+          <div class="row justify-content-between mb-4">
+            <div class="col-5">
+              <label for="location" class="label-text_accent">First name</label>
               <input
                 type="text"
-                name="number"
-                id="number"
-                placeholder="+234 903 919 7553"
+                name="location"
+                id="fname"
+                placeholder="Ex: John"
+                required
               />
+            </div>
+            <div class="col-5">
+              <label for="location" class="label-text_accent">Last name</label>
+              <input
+                type="text"
+                name="location"
+                id="lname"
+                placeholder="Ex: Doe"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="row mb-4">
+            <div class="col-5">
+              <label for="sex">Choose your sex</label>
+              <select class="me-3 client-sex-select" name="flag" id="sex">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="row mb-5">
+            <div class="col-5">
+              <label for="location">What is your nationality?</label>
+              <input
+                type="text"
+                name="location"
+                id="location"
+                placeholder="Country"
+                required
+              />
+            </div>
+          </div>
+
+          <label class="mb-3">What's your address?</label>
+          <div class="row justify-content-between mb-4">
+            <div class="col-5">
+              <label for="location" class="label-text_accent"
+                >Street address</label
+              >
+              <input type="text" name="street" id="street" required />
+            </div>
+            <div class="col-5">
+              <label for="location" class="label-text_accent"
+                >Town/ Village</label
+              >
+              <input type="text" name="town" id="town" required />
+            </div>
+          </div>
+
+          <div class="row mb-5">
+            <div class="col-5">
+              <label for="location" class="label-text_accent"
+                >Postal code</label
+              >
+              <input type="text" name="postal" id="postal" required />
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-5">
+              <label for="number">Phone Number</label>
+              <div class="d-flex justify-content-between">
+                <select class="me-3 client-flag-select" name="flag" id="flag">
+                  <option value="selected">NGN</option>
+                  <option value="">USD</option>
+                  <option value="">GBP</option>
+                </select>
+                <input
+                  type="text"
+                  name="number"
+                  id="number"
+                  placeholder="+234 903 919 7553"
+                />
+              </div>
             </div>
           </div>
           <div class="submit-btn">
@@ -261,7 +300,7 @@
         <div class="form multistep active-card">
           <div class="client-upload">
             <img
-              src="assets/Vector.png"
+              src="assets/icons/client-person-icon.svg"
               alt="profile-picture"
               class="profile-picture"
             />
@@ -273,7 +312,7 @@
             />
             <label for="profile-picture">
               <img
-                src="assets/Property 1=Default.png"
+                src="assets/icons/add_profile_photobtn.svg"
                 alt="file-upload"
                 class="file-upload"
               />
@@ -284,7 +323,12 @@
             <button id="formBtn-prev" class="button btn-service" type="button">
               Back
             </button>
-            <button id="formBtn-next" class="button" type="submit">
+            <button
+              class="button"
+              type="submit"
+              data-bs-toggle="modal"
+              data-bs-target="#myModal-3"
+            >
               Finish
             </button>
           </div>
@@ -292,22 +336,27 @@
       </section>
     </form>
 
-    <section class="success step">
-      <div class="success-container">
-        <img src="assets/images/ivoiceafrica logo 2.png" alt="logo" />
-        <h2 class="my-2">All good!</h2>
-        <p>
-          Your profile has successfully been created! A message for the clients
-        </p>
-        <img
-          src="assets/images/Frame 79.png"
-          alt="successicon"
-          class="success-icon"
-        />
-        <button type="button" class="success-button button" id="formBtn-next">
-          Start
-        </button>
+    <div class="modal fade" id="myModal-3">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="success">
+            <div class="success-container">
+              <img src="assets/images/ivoiceafrica logo 2.png" alt="logo" />
+              <h2 class="my-2">All good!</h2>
+              <p>
+                Your profile has successfully been created! Be ready to explore
+                great opportunities
+              </p>
+              <img
+                src="assets/images/Frame 79.png"
+                alt="successicon"
+                class="success-icon"
+              />
+              <a href="sign-in.html" class="success-button button">Start</a>
+            </div>
+          </div>
+        </div>
       </div>
-    </section>
+    </div>
   </body>
 </html>

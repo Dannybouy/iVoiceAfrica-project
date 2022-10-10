@@ -249,64 +249,74 @@
 
       <form id="cardform">
         <div class="form multistep active-card">
-          <div class="input-group">
-            <label for="location">Where are you based?</label>
-            <input
-              type="text"
-              name="location"
-              id="location"
-              placeholder="Search to find your country"
-              required
-            />
-          </div>
-          <div class="input-group">
-            <label for="country">What is your nationality?</label>
-            <input
-              type="text"
-              name="country"
-              id="country"
-              placeholder="Search to find your country"
-            />
-          </div>
+          <label for="" class="mb-3">Fill in your details</label>
 
-          <label>What's your address?</label>
-
-          <div class="fields">
-            <div class="input-field">
-              <label for="street">Street</label>
-              <input type="text" name="street" id="street" />
-            </div>
-            <div class="input-field">
-              <label for="town">Town/Village</label>
-              <input type="text" name="town" id="town" />
-            </div>
-          </div>
-          <div class="input-group-3 input-group">
-            <label for="postal" class="location">Postal code</label>
-            <input type="text" name="postal" id="postal" class="location" />
-          </div>
-          <div class="input-group-3 input-group">
-            <label for="postal" class="location">Choose your sex</label>
-            <select name="degree" id="degree" class="Degree" required>
-              <option value="" disabled hidden></option>
-              <option value="selected">Male</option>
-              <option value="">Female</option>
-            </select>
-          </div>
-          <div class="input-group-4">
-            <label for="number">Phone Number</label>
-            <div>
-              <select class="me-3" name="flag" id="flag">
-                <option value="selected">NGN</option>
-                <option value="">USD</option>
-                <option value="">GBP</option>
-              </select>
+          <div class="row justify-content-between mb-4 freelancer-details">
+            <div class="col-sm-12">
+              <label for="location">Where are you based?</label>
               <input
                 type="text"
-                name="number"
-                id="number"
-                placeholder="+234 903 919 7553"
+                name="location"
+                id="fname"
+                placeholder=""
+                required
               />
+            </div>
+            <div class="col-sm-12">
+              <label for="location">What's your nationality?</label>
+              <input
+                type="text"
+                name="location"
+                id="lname"
+                placeholder="Ex: Doe"
+                required
+              />
+            </div>
+          </div>
+
+          <label class="mb-3">What's your address?</label>
+          <div class="row justify-content-between mb-4 freelancer-details">
+            <div class="col-sm-12">
+              <label for="location" class="label-text_accent"
+                >Street address</label
+              >
+              <input type="text" name="street" id="street" required />
+            </div>
+
+            <div class="col-sm-12">
+              <label for="location" class="label-text_accent"
+                >Town/ Village</label
+              >
+              <input type="text" name="town" id="town" required />
+            </div>
+          </div>
+
+          <div class="row mb-4">
+            <div class="col">
+              <label for="sex">Choose your sex</label>
+              <select class="me-3 client-sex-select" name="flag" id="sex">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <label for="number">Phone Number</label>
+              <div class="d-flex justify-content-between">
+                <select class="me-3 client-flag-select" name="flag" id="flag">
+                  <option value="selected">NGN</option>
+                  <option value="">USD</option>
+                  <option value="">GBP</option>
+                </select>
+                <input
+                  type="text"
+                  name="number"
+                  id="number"
+                  placeholder="+234 903 919 7553"
+                />
+              </div>
             </div>
           </div>
           <div class="submit-btn">
