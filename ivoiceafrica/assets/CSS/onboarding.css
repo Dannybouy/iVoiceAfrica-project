@@ -55,7 +55,7 @@
 }
 
 body {
-  background: rgba(250, 254, 255, 1);
+  background: #f5f5f5;
   font-family: var(--title-font-family);
 }
 
@@ -706,7 +706,6 @@ textarea {
   font-size: var(--title-medium-fontsize);
   font-weight: 600;
   color: hsla(215, 41%, 18%, 0.72);
-
 }
 
 /* Client image upload for profile picture */
@@ -733,12 +732,9 @@ textarea {
   top: 30%;
 }
 
-
-
 #profile-picture {
   display: none;
 }
-
 
 @media (max-width: 576px) {
   .onboard-section {
@@ -783,7 +779,7 @@ textarea {
   }
   .form-header-title {
     font-size: 2rem;
-    margin-bottom: .5em;
+    margin-bottom: 0.5em;
   }
 
   .form-header-text {
@@ -807,7 +803,7 @@ textarea {
   .services-offer-btn {
     margin-top: 1em;
   }
-  .services-offer-btn button{
+  .services-offer-btn button {
     width: 30%;
   }
 }

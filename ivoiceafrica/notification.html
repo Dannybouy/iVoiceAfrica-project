@@ -3,12 +3,16 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>Finances</title>
+    <title>srtdash - ICO Dashboard</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <link rel="stylesheet" href="assets/CSS/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="assets/CSS/css/metisMenu.css" />
-    <link rel="stylesheet" href="assets/CSS/css/slicknav.min.css" />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="assets/images/icon/favicon.ico"
+    />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/metisMenu.css" />
+    <link rel="stylesheet" href="assets/css/slicknav.min.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
       rel="stylesheet"
@@ -21,17 +25,25 @@
       media="all"
     />
     <!-- others css -->
-    <link rel="stylesheet" href="assets/CSS/css/typography.css" />
-    <link rel="stylesheet" href="assets/CSS/css/default-css.css" />
-    <link rel="stylesheet" href="assets/CSS/css/styles.css" />
-    <link rel="stylesheet" href="assets/CSS/css/test.css">
-    <link rel="stylesheet" href="assets/CSS/css/responsive.css" />
+    <link rel="stylesheet" href="assets/css/typography.css" />
+    <link rel="stylesheet" href="assets/css/default-css.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
     <!-- modernizr css -->
-    <script src="assets/JS/js/vendor/modernizr-2.8.3.min.js"></script>
-    <script src="assets/JS/js/scripts.js" defer></script>
+    <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
+    <script src="assets/js/scripts.js" defer></script>
   </head>
 
   <body>
+    <!--[if lt IE 8]>
+      <p class="browserupgrade">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="http://browsehappy.com/">upgrade your browser</a> to improve
+        your experience.
+      </p>
+    <![endif]-->
+    <!-- preloader area start -->
+
     <div id="preloader">
       <div class="loader"></div>
     </div>
@@ -50,7 +62,9 @@
             </div>
             <div class="ml-5 logo">
               <a href="index.html"
-                ><img src="assets/images/ivoiceafrica logo 1.png" alt="logo"
+                ><img
+                  src="assets/assets-iva/ivoiceafrica logo 1.png"
+                  alt="logo"
               /></a>
             </div>
           </div>
@@ -74,10 +88,10 @@
               <div
                 class="notification-area pull-right d-flex align-items-center"
               >
-                <a href="notification.html" class="text-center">
+                <button class="text-center" type="button">
                   <span class="material-symbols-outlined"> notifications </span>
                   <p>Notifications</p>
-                </a>
+                </button>
 
                 <button
                   class="text-center ml-5"
@@ -104,7 +118,7 @@
                     <div class="modal-head">
                       <div>
                         <img
-                          src="assets/images/profile.svg"
+                          src="assets/assets-iva/profile.svg"
                           alt="profile"
                         />
                       </div>
@@ -164,11 +178,11 @@
                         ><span>Jobs </span></a
                       >
                       <ul class="collapse">
-                        <li><a href="jobalerts.html">Job alerts</a></li>
+                        <li><a href="index.html">Job alerts</a></li>
                         <li>
-                          <a href="activejobs.html">Active Jobs</a>
+                          <a href="index3-horizontalmenu.html">Active Jobs</a>
                         </li>
-                        <li><a href="finishedjobs.html">Finished Jobs</a></li>
+                        <li><a href="index.html">Finished Jobs</a></li>
                       </ul>
                     </li>
                     <li>
@@ -186,7 +200,7 @@
                       >
                     </li>
                     <li>
-                      <a href="profile.html" aria-expanded="true"
+                      <a href="javascript:void(0)" aria-expanded="true"
                         ><span class="material-symbols-outlined material-icon">
                           account_box </span
                         ><span>Profile</span></a
@@ -213,128 +227,47 @@
                 class="col-xl-10 col-lg-8 px-5 d-flex justify-content-between"
               >
                 <div class="job-alert-heading-first">
-                  <span>Finances</span>
+                  <span>Notifications</span>
                 </div>
               </div>
             </div>
 
             <!-- job alerts area start -->
-            <div class="row">
-              <div class="col-xl-11 col-lg-9 mt-4 px-5">
-                <div class="finance-stats">
-                  <div class="in-account">
-                    <span class="finance-heading">In Account</span>
-                    <p class="finance-amt">$ 400</p>
-                  </div>
-                  <div class="in-account">
-                    <span class="finance-heading">In Escrow</span>
-                    <p class="finance-amt">$ 200</p>
-                  </div>
-                  <div class="in-account">
-                    <span class="finance-heading">Withdrawn</span>
-                    <p class="finance-amt">$ 1800</p>
-                  </div>
-                  <div class="in-account">
-                    <span class="finance-heading">Total Earnings</span>
-                    <p class="finance-amt">$ 2400</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-xl-11 col-lg-9 mt-4 px-5">
-                <div class="financial-history">
-                  <span class="finance-hist-label">Transaction History</span>
-                  <div class="finance-filter">
-                    <div class="d-flex">
-                      <div class="trans-finance-filter">
-                        <span>Transaction type</span>
-                        <select name="" id="">
-                          <option value="">All</option>
-                          <option value="">All</option>
-                          <option value="">All</option>
-                        </select>
-                      </div>
-                      <div class="trans-finance-filter">
-                        <select name="" id="">
-                          <option value="">Last 7 days</option>
-                          <option value="">Last 7 days</option>
-                        </select>
-                        <span>September 20 - September 27</span>
-                      </div>
-                    </div>
-                    <div>
-                      <button class="withdraw-btn">Withdraw</button>
-                    </div>
-                  </div>
-                  <div>
-                    <table class="finance-stats-table">
-                      <thead>
-                        <tr>
-                          <th>Date</th>
-                          <th>Description</th>
-                          <th>Amount</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>26th September, 2022</td>
-                          <td>
-                            Account credited for Translate Physics Textbook From
-                            English To French
-                          </td>
-                          <td>$200</td>
-                        </tr>
-                        <tr>
-                          <td>26th September, 2022</td>
-                          <td>
-                            Account credited for Translate Physics Textbook From
-                            English To French
-                          </td>
-                          <td>$200</td>
-                        </tr>
-                        <tr>
-                          <td>26th September, 2022</td>
-                          <td>
-                            Account credited for Translate Physics Textbook From
-                            English To French
-                          </td>
-                          <td>$200</td>
-                        </tr>
-                        <tr>
-                          <td>26th September, 2022</td>
-                          <td>
-                            Account credited for Translate Physics Textbook From
-                            English To French
-                          </td>
-                          <td>$200</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
-              </div>
-            </div>
+              <div></div> 
           </div>
         </div>
       </div>
     </div>
 
-     <!-- jquery latest version -->
-     <script src="assets/JS/js/vendor/jquery-2.2.4.min.js"></script>
-     <!-- bootstrap 4 js -->
-     <script src="assets/JS/js/popper.min.js"></script>
-     <script src="assets/JS/js/bootstrap.min.js"></script>
-     <script src="assets/JS/js/owl.carousel.min.js"></script>
-     <script src="assets/JS/js/metisMenu.min.js"></script>
-     <script src="assets/JS/js/jquery.slimscroll.min.js"></script>
-     <script src="assets/JS/js/jquery.slicknav.min.js"></script>
- 
-     <!-- others plugins -->
-     <script src="assets/JS/js/plugins.js"></script>
-     <script src="assets/JS/js/scripts.js"></script>
+    <!-- jquery latest version -->
+    <script src="assets/js/vendor/jquery-2.2.4.min.js"></script>
+    <!-- bootstrap 4 js -->
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/metisMenu.min.js"></script>
+    <script src="assets/js/jquery.slimscroll.min.js"></script>
+    <script src="assets/js/jquery.slicknav.min.js"></script>
 
-     
+    <!-- start chart js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
+    <!-- start highcharts js -->
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <!-- start zingchart js -->
+    <script src="https://cdn.zingchart.com/zingchart.min.js"></script>
+    <script>
+      zingchart.MODULESDIR = "https://cdn.zingchart.com/modules/";
+      ZC.LICENSE = [
+        "569d52cefae586f634c54f86dc99e6a9",
+        "ee6b7db5b51705a13dc2339db3edaf6d",
+      ];
+    </script>
+    <!-- all line chart activation -->
+    <script src="assets/js/line-chart.js"></script>
+    <!-- all pie chart -->
+    <script src="assets/js/pie-chart.js"></script>
+    <!-- others plugins -->
+    <script src="assets/js/plugins.js"></script>
+    <script src="assets/js/scripts.js"></script>
   </body>
 </html>

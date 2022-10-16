@@ -3,9 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>Finances</title>
+    <title>FAQs</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
     <link rel="stylesheet" href="assets/CSS/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/CSS/css/metisMenu.css" />
     <link rel="stylesheet" href="assets/CSS/css/slicknav.min.css" />
@@ -24,7 +23,6 @@
     <link rel="stylesheet" href="assets/CSS/css/typography.css" />
     <link rel="stylesheet" href="assets/CSS/css/default-css.css" />
     <link rel="stylesheet" href="assets/CSS/css/styles.css" />
-    <link rel="stylesheet" href="assets/CSS/css/test.css">
     <link rel="stylesheet" href="assets/CSS/css/responsive.css" />
     <!-- modernizr css -->
     <script src="assets/JS/js/vendor/modernizr-2.8.3.min.js"></script>
@@ -32,6 +30,7 @@
   </head>
 
   <body>
+  
     <div id="preloader">
       <div class="loader"></div>
     </div>
@@ -49,8 +48,10 @@
               <img src="assets/icons/menu-open.svg" alt="menu-open" />
             </div>
             <div class="ml-5 logo">
-              <a href="index.html"
-                ><img src="assets/images/ivoiceafrica logo 1.png" alt="logo"
+              <a href="dashboard.html"
+                ><img
+                  src="assets/images/ivoiceafrica logo 1.png"
+                  alt="logo"
               /></a>
             </div>
           </div>
@@ -74,10 +75,10 @@
               <div
                 class="notification-area pull-right d-flex align-items-center"
               >
-                <a href="notification.html" class="text-center">
+                <button class="text-center" type="button">
                   <span class="material-symbols-outlined"> notifications </span>
                   <p>Notifications</p>
-                </a>
+                </button>
 
                 <button
                   class="text-center ml-5"
@@ -213,128 +214,51 @@
                 class="col-xl-10 col-lg-8 px-5 d-flex justify-content-between"
               >
                 <div class="job-alert-heading-first">
-                  <span>Finances</span>
+                  <span>FAQs</span>
                 </div>
               </div>
             </div>
 
             <!-- job alerts area start -->
-            <div class="row">
-              <div class="col-xl-11 col-lg-9 mt-4 px-5">
-                <div class="finance-stats">
-                  <div class="in-account">
-                    <span class="finance-heading">In Account</span>
-                    <p class="finance-amt">$ 400</p>
-                  </div>
-                  <div class="in-account">
-                    <span class="finance-heading">In Escrow</span>
-                    <p class="finance-amt">$ 200</p>
-                  </div>
-                  <div class="in-account">
-                    <span class="finance-heading">Withdrawn</span>
-                    <p class="finance-amt">$ 1800</p>
-                  </div>
-                  <div class="in-account">
-                    <span class="finance-heading">Total Earnings</span>
-                    <p class="finance-amt">$ 2400</p>
-                  </div>
-                </div>
-              </div>
-            </div>
 
-            <div class="row">
-              <div class="col-xl-11 col-lg-9 mt-4 px-5">
-                <div class="financial-history">
-                  <span class="finance-hist-label">Transaction History</span>
-                  <div class="finance-filter">
-                    <div class="d-flex">
-                      <div class="trans-finance-filter">
-                        <span>Transaction type</span>
-                        <select name="" id="">
-                          <option value="">All</option>
-                          <option value="">All</option>
-                          <option value="">All</option>
-                        </select>
+            <div>
+              <div class="row">
+                <div class="col-xl-11 col-lg-9 mt-4 px-5">
+                  <div class="faq-head">
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div>
+                        <div>
+                          <span>Godwin</span> would like to work with you
+                        </div>
+                        <h2>
+                          Translate Physics textbook from english Language to
+                          French
+                        </h2>
                       </div>
-                      <div class="trans-finance-filter">
-                        <select name="" id="">
-                          <option value="">Last 7 days</option>
-                          <option value="">Last 7 days</option>
-                        </select>
-                        <span>September 20 - September 27</span>
-                      </div>
+                      <span>4 hours ago</span>
                     </div>
-                    <div>
-                      <button class="withdraw-btn">Withdraw</button>
-                    </div>
-                  </div>
-                  <div>
-                    <table class="finance-stats-table">
-                      <thead>
-                        <tr>
-                          <th>Date</th>
-                          <th>Description</th>
-                          <th>Amount</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>26th September, 2022</td>
-                          <td>
-                            Account credited for Translate Physics Textbook From
-                            English To French
-                          </td>
-                          <td>$200</td>
-                        </tr>
-                        <tr>
-                          <td>26th September, 2022</td>
-                          <td>
-                            Account credited for Translate Physics Textbook From
-                            English To French
-                          </td>
-                          <td>$200</td>
-                        </tr>
-                        <tr>
-                          <td>26th September, 2022</td>
-                          <td>
-                            Account credited for Translate Physics Textbook From
-                            English To French
-                          </td>
-                          <td>$200</td>
-                        </tr>
-                        <tr>
-                          <td>26th September, 2022</td>
-                          <td>
-                            Account credited for Translate Physics Textbook From
-                            English To French
-                          </td>
-                          <td>$200</td>
-                        </tr>
-                      </tbody>
-                    </table>
                   </div>
                 </div>
               </div>
-            </div>
           </div>
         </div>
       </div>
     </div>
 
-     <!-- jquery latest version -->
-     <script src="assets/JS/js/vendor/jquery-2.2.4.min.js"></script>
-     <!-- bootstrap 4 js -->
-     <script src="assets/JS/js/popper.min.js"></script>
-     <script src="assets/JS/js/bootstrap.min.js"></script>
-     <script src="assets/JS/js/owl.carousel.min.js"></script>
-     <script src="assets/JS/js/metisMenu.min.js"></script>
-     <script src="assets/JS/js/jquery.slimscroll.min.js"></script>
-     <script src="assets/JS/js/jquery.slicknav.min.js"></script>
- 
-     <!-- others plugins -->
-     <script src="assets/JS/js/plugins.js"></script>
-     <script src="assets/JS/js/scripts.js"></script>
-
-     
+      <!-- jquery latest version -->
+      <script src="assets/JS/js/vendor/jquery-2.2.4.min.js"></script>
+      <!-- bootstrap 4 js -->
+      <script src="assets/JS/js/popper.min.js"></script>
+      <script src="assets/JS/js/bootstrap.min.js"></script>
+      <script src="assets/JS/js/owl.carousel.min.js"></script>
+      <script src="assets/JS/js/metisMenu.min.js"></script>
+      <script src="assets/JS/js/jquery.slimscroll.min.js"></script>
+      <script src="assets/JS/js/jquery.slicknav.min.js"></script>
+  
+      <!-- others plugins -->
+      <script src="assets/JS/js/plugins.js"></script>
+      <script src="assets/JS/js/scripts.js"></script>
   </body>
 </html>
