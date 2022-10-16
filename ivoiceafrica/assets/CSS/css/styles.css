@@ -1634,10 +1634,120 @@ td {
 
 .profile-info {
   height: 500px;
-  width: 95%;
-  background:  hsla(0, 0%, 100%, 1);
+  background-color:  hsla(0, 0%, 100%, 1);
   border-radius: 0px 0px 20px 20px;
-  border: 1px solid hsla(214, 57%, 24%, 0.1)
+  border: 1px solid hsla(214, 57%, 24%, 0.1);
 }
+
+.profile-bg {
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+  position: relative;
+}
+
+.profile-details {
+  margin-left: 3em;
+  margin-top: 4em;
+  color: hsla(215, 41%, 18%, 0.72);
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+}
+
+.profile-picture {
+  position: absolute;
+  top: 260px;
+}
+
+.profilename {
+  font-family: 'Open Sans';
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: hsla(216, 35%, 15%, 1);
+}
+.profile-headline {
+  font-size: 1.125rem;
+  color: hsla(214, 41%, 16%, 0.94);
+}
+
+.profile-services {
+  background-color:  hsla(0, 0%, 100%, 1);
+  border-radius: 15px;
+  border: 1px solid hsla(214, 57%, 24%, 0.1);
+  padding: 1.5em 2em;
+  margin-top: 1em;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 1.125rem;
+  color: hsla(214, 42%, 19%, 0.6);
+}
+
+.profile-service-label {
+  font-family: 'Open Sans';
+  font-weight: 600;
+  font-size: 1rem;
+  color: hsla(214, 42%, 19%, 0.6);
+}
+
+.service-rendered {
+  padding: 1em;
+  border: 1px solid hsla(214, 57%, 24%, 0.1);
+  border-radius: 10px;
+  margin: 1em 0;
+}
+
+.service {
+  font-family: 'Open Sans';
+  font-weight: 600;
+  font-size: 1.125rem;
+  color: hsla(216, 35%, 15%, 1);
+}
+
+.grey-dot {
+  width: 5px;
+  height: 5px;
+  background: hsla(214, 42%, 19%, 0.6);
+  border-radius: 15px;
+  margin: 0 .5em;
+}
+
+.portfolio-link {
+  color: hsla(145, 80%, 42%, 1);
+  font-size: 14px;
+  margin-right: .3em;
+
+}
+
+.client-totalreview {
+  color: hsla(216, 35%, 15%, 1);
+  font-family: 'Open Sans';
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 1em;
+}
+
+.client-profile-name {
+  color: hsla(216, 35%, 15%, 1);
+}
+
+.client-review-statement {
+  font-size: 1rem;
+}
+
+.client-reviewdate {
+  font-family: 'Open Sans';
+  font-weight: 400;
+  font-size: 14px;
+  color: hsla(215, 41%, 18%, 0.72);
+}
+
+.more-reviews {
+  font-family: 'Open Sans';
+  font-weight: 600;
+  font-size: 16px;
+  color: hsla(215, 41%, 18%, 0.72);
+}
+
 
 /* ----------------Profile end ------------------*/
