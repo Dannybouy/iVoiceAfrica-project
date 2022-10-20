@@ -14,25 +14,6 @@
     });
 
     /*================================
-    sidebar collapsing
-    ==================================*/
-    if (window.innerWidth <= 1364) {
-        $('.page-container').addClass('sbar_collapsed');
-    }
-    $('.nav-btn').on('click', function() {
-        $('.page-container').toggleClass('sbar_collapsed');
-    });
-
-    /*================================
-    Start Footer resizer
-    ==================================*/
-    var e = function() {
-        var e = (window.innerHeight > 0 ? window.innerHeight : this.screen.height) - 5;
-        (e -= 67) < 1 && (e = 1), e > 67 && $(".main-content").css("min-height", e + "px")
-    };
-    $(window).ready(e), $(window).on("resize", e);
-
-    /*================================
     sidebar menu
     ==================================*/
      $("#menu").metisMenu();
@@ -271,6 +252,33 @@ showModalBtn.addEventListener('click', (e) => {
 //     steps[index].classList.toggle('active');
 // }
 
+
+/*================================
+    For the Sidbar to side in and out
+    ==================================*/
+
+    const hamburgerMenu = document.getElementById('sidebar-menu');
+    const sidebar = document.querySelector('.sidebar-menu');
+    const mainPageContent = document.querySelector('.main-pagecontent');
+    const biggerMarginDiv = [...document.querySelectorAll('#bigger-margin')];
+
+    hamburgerMenu.addEventListener('click', (e) =>{
+        alternatePage()
+    });
+
+    function alternatePage() {
+        sidebar.classList.toggle('sidebar-menu-active');
+        mainPageContent.classList.toggle('main-pagecontent-active');
+        biggerMarginDiv.forEach(div => {
+            div.classList.toggle('ml-7')
+        });
+    }
+
+    
+
+
+
+
 const descTab = document.getElementById('descTab');
 const devTab = document.getElementById('devTab');
 const attTab = document.getElementById('attTab');
@@ -295,7 +303,5 @@ attTab.onclick = () =>{
     devContent.style.display = 'none';
     attContent.style.display = 'block';
 }
-
-
 
 

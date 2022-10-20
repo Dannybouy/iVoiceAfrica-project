@@ -126,3 +126,27 @@
     font-weight: 500;
     font-size: 1.125rem;
 }
+
+
+/* Client Finance */
+
+.clientFinance {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.clientFinance .clienttotal {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 1.125rem;
+    color: hsla(214, 45%, 20%, 0.5);
+}
+
+.clientspent-total {
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: hsla(216, 35%, 15%, 1);
+    margin-left: .5em;
+}

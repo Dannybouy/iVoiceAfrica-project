@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>Dashboard</title>
+    <title>FAQs</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="assets/CSS/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/CSS/css/metisMenu.css" />
@@ -77,11 +77,14 @@
             </div>
 
             <div>
-              <div class="notification-area">
-                <button class="text-center" type="button">
+              <div class="notification-area d-flex">
+                <a
+                  href="clientnotification.html"
+                  class="text-center notification-btn"
+                >
                   <span class="material-symbols-outlined"> notifications </span>
                   <p>Notifications</p>
-                </button>
+                </a>
 
                 <button
                   class="text-center ml-5"
@@ -150,12 +153,12 @@
                 <nav>
                   <ul class="metismenu" id="menu">
                     <li class="active">
-                      <a href="dashboard.html" aria-expanded="true"
+                      <a href="newrequest.html" aria-expanded="true"
                         ><span
                           class="material-symbols-outlined material-icon orange600"
                         >
                           grid_view </span
-                        ><span class="title-medium-font">dashboard</span></a
+                        ><span class="title-medium-font">New Request</span></a
                       >
                     </li>
                     <li>
@@ -165,36 +168,41 @@
                         ><span class="title-medium-font">Jobs</span></a
                       >
                       <ul class="collapse">
-                        <li><a href="jobalerts.html">Job alerts</a></li>
+                        <li><a href="clientrequests.html">Request</a></li>
                         <li>
-                          <a href="activejobs.html">Active Jobs</a>
+                          <a href="clientbids.html">Bids</a>
                         </li>
-                        <li><a href="finishedjobs.html">Finished Jobs</a></li>
+                        <li><a href="inprogress.html">In Progress</a></li>
+                        <li><a href="clientfinished.html">Finished</a></li>
                       </ul>
                     </li>
                     <li>
-                      <a href="Finances.html" aria-expanded="true"
+                      <a href="clientfinance.html" aria-expanded="true"
                         ><span class="material-symbols-outlined material-icon">
                           payments </span
                         ><span class="title-medium-font">Finances</span></a
                       >
                     </li>
                     <li>
-                      <a href="faqs.html" aria-expanded="true"
+                      <a href="clientfaqs.html" aria-expanded="true"
                         ><span class="material-symbols-outlined material-icon">
                           quiz </span
                         ><span class="title-medium-font">FAQs</span></a
                       >
                     </li>
                     <li>
-                      <a href="profile.html" aria-expanded="true"
+                      <a href="clientprofile.html" aria-expanded="true"
                         ><span class="material-symbols-outlined material-icon">
                           account_box </span
                         ><span class="title-medium-font">Profile</span></a
                       >
                     </li>
                     <li>
-                      <a href="javascript:void(0)" aria-expanded="true"
+                      <a
+                        href="#"
+                        aria-expanded="true"
+                        data-toggle="modal"
+                        data-target="#logoutModal"
                         ><span class="material-symbols-outlined material-icon">
                           logout
                         </span>
@@ -629,6 +637,40 @@
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- logout Modal -->
+    <div
+      class="modal fade"
+      id="logoutModal"
+      data-backdrop="static"
+      data-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content logoutModal">
+          <div class="modal-header">
+            <p class="modal-title" id="logoutModalLabel">
+              Log out of iVoice Africa?
+            </p>
+          </div>
+          <div class="modal-body logoutModal-body">
+            You can log in anytime with your email and password
+          </div>
+          <div class="modal-footer logoutModal-footer">
+            <a href="sign-in.html">
+              <button class="transparentBtn" data-dismiss="modal">
+                Logout
+              </button>
+            </a>
+            <button class="logoutBtn" data-dismiss="modal" aria-label="Close">
+              Cancel
+            </button>
           </div>
         </div>
       </div>

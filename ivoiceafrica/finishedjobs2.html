@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>Finished Jobs 2</title>
+    <title>Finished Jobs details</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="assets/CSS/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/CSS/css/metisMenu.css" />
@@ -48,24 +48,20 @@
       <!-- Header area start -->
 
       <div class="header-area">
-        <div class="row">
-          <div
-            class="sidebar-header col-md-2 col-lg-3 col-sm-4 d-flex align-items-center"
-          >
+        <div class="headerarea-divder">
+          <div class="sidebar-header d-flex align-items-center">
             <div class="nav-btn pull-left">
               <img src="assets/icons/menu-open.svg" alt="menu-open" />
             </div>
             <div class="ml-5 logo">
               <a href="dashboard.html"
-                ><img
-                  src="assets/images/ivoiceafrica logo 1.png"
-                  alt="logo"
+                ><img src="assets/images/ivoiceafrica logo 1.png" alt="logo"
               /></a>
             </div>
           </div>
           <!-- Searchbar and notification start -->
           <div
-            class="col-md-8 col-sm-4 col-lg-9 clearfix d-flex align-items-center nav-search"
+            class="d-flex align-items-center big-margin justify-content-between w-72"
           >
             <div class="search-box pull-left">
               <form action="#">
@@ -79,10 +75,8 @@
               </form>
             </div>
 
-            <div class="clearfix nav-notification">
-              <div
-                class="notification-area pull-right d-flex align-items-center"
-              >
+            <div>
+              <div class="notification-area">
                 <button class="text-center" type="button">
                   <span class="material-symbols-outlined"> notifications </span>
                   <p>Notifications</p>
@@ -112,10 +106,7 @@
                   <div class="col">
                     <div class="modal-head">
                       <div>
-                        <img
-                          src="assets/images/profile.svg"
-                          alt="profile"
-                        />
+                        <img src="assets/images/profile.svg" alt="profile" />
                       </div>
                       <p class="freelancer-name">Bukola Adesina</p>
                       <p>Freelancer</p>
@@ -149,28 +140,28 @@
       </div>
       <!-- Header area end -->
 
-      <div class="main-content container-fluid">
-        <div class="row">
-          <div class="sidebar-menu col-lg-3">
+      <div class="main-content">
+        <div class="page-divider">
+          <div class="sidebar-menu">
             <!-- sidebar menu area start -->
             <div class="main-menu">
-              <div class="menu-inner">
+              <div>
                 <nav>
                   <ul class="metismenu" id="menu">
                     <li class="active">
-                      <a href="javascript:void(0)" aria-expanded="true"
+                      <a href="dashboard.html" aria-expanded="true"
                         ><span
                           class="material-symbols-outlined material-icon orange600"
                         >
                           grid_view </span
-                        ><span>dashboard</span></a
+                        ><span class="title-medium-font">dashboard</span></a
                       >
                     </li>
                     <li>
                       <a href="javascript:void(0)" aria-expanded="true"
                         ><span class="material-symbols-outlined material-icon">
                           work </span
-                        ><span>Jobs </span></a
+                        ><span class="title-medium-font">Jobs</span></a
                       >
                       <ul class="collapse">
                         <li><a href="jobalerts.html">Job alerts</a></li>
@@ -184,29 +175,33 @@
                       <a href="Finances.html" aria-expanded="true"
                         ><span class="material-symbols-outlined material-icon">
                           payments </span
-                        ><span>Finances</span></a
+                        ><span class="title-medium-font">Finances</span></a
                       >
                     </li>
                     <li>
-                      <a href="javascript:void(0)" aria-expanded="true"
+                      <a href="faqs.html" aria-expanded="true"
                         ><span class="material-symbols-outlined material-icon">
                           quiz </span
-                        ><span>FAQs</span></a
+                        ><span class="title-medium-font">FAQs</span></a
                       >
                     </li>
                     <li>
                       <a href="profile.html" aria-expanded="true"
                         ><span class="material-symbols-outlined material-icon">
                           account_box </span
-                        ><span>Profile</span></a
+                        ><span class="title-medium-font">Profile</span></a
                       >
                     </li>
                     <li>
-                      <a href="javascript:void(0)" aria-expanded="true"
+                      <a
+                        href="#"
+                        aria-expanded="true"
+                        data-toggle="modal"
+                        data-target="#logoutModal"
                         ><span class="material-symbols-outlined material-icon">
                           logout
                         </span>
-                        <span>Logout</span></a
+                        <span class="title-medium-font">Logout</span></a
                       >
                     </li>
                   </ul>
@@ -216,29 +211,29 @@
             <!-- sidebar menu area end -->
           </div>
 
-          <div class="col-lg-9">
-            <div class="row job-alert-heading">
-              <div
-                class="col-xl-10 col-lg-8 px-5 d-flex justify-content-between"
-              >
+          <div class="main-pagecontent">
+            <div class="job-alert-heading">
+              <div class="bigger-margin">
                 <div class="job-alert-heading-first">
                   <span>Finished Jobs</span>
-                </div>
-                <div class="job-alert-filter">
-                  <span>Sort by</span>
-                  <select name="" id="" class="ml-3">
-                    <option value="" selected>Last 7 days</option>
-                    <option value="">Language</option>
-                    <option value="">Date</option>
-                  </select>
                 </div>
               </div>
             </div>
 
+            <div class="arrow_back_link">
+              <a href="finishedjobs.html">
+                <img
+                  src="assets/icons/arrow_back_link.svg"
+                  alt="arrow_back_link"
+                />
+              </a>
+            </div>
+
             <!-- job alerts area start -->
-            <div class="row">
-              <div class="col-xl-11 col-lg-9 mt-4 px-5">
-                <div class="job-alerts">
+
+            <div class="bigger-margin">
+              <div class="mt-4 w-90">
+                <div class="job-alerts mb-3">
                   <div class="job-alerts-card-body my-3">
                     <div
                       class="d-flex justify-content-between align-items-center mb-4"
@@ -262,7 +257,8 @@
                       <div class="d-flex align-items-center mb-3">
                         <div class="mr-3 d-flex">
                           <span class="material-symbols-outlined mr-2"
-                            >timer</span>
+                            >timer</span
+                          >
                           <span>3 days</span>
                         </div>
                         <div class="mr-3 d-flex">
@@ -278,19 +274,19 @@
                           <span>$400</span>
                         </div>
                       </div>
-                      <div>
+
+                      <div
+                        class="d-flex align-items-center clientreview-heading"
+                      >
                         <img
                           src="assets/icons/satisfaction.svg"
                           alt="satisfaction-icon"
                         />
                         <span>100% Client Satisfaction</span>
-                        <span>.</span>
+                        <div class="grey-dot"></div>
                         <span>0 Review Requests</span>
-                        <span>.</span>
-                        <img
-                          src="assets/images/rating_stars.svg"
-                          alt="rating"
-                        />
+                        <div class="grey-dot"></div>
+                        <img src="assets/icons/rating stars.svg" alt="rating" />
                       </div>
                       <div class="job-alert-service-time mt-3">
                         <p>Completed 10th September 2022</p>
@@ -298,15 +294,13 @@
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
 
-            <div class="row">
-              <div class="col-xl-11 col-lg-9 mt-4 px-5">
-                <div class="job-alerts">
+                <div class="job-alerts mb-3">
                   <div class="job-alerts-card-body my-2">
-                    <label for="" class="finished-job-desc">Job Description</label>
-                    <p class="finished-job-title">About the job</p>
+                    <label for="" class="finished-job-desc"
+                      >Job Description</label
+                    >
+                    <p class="finished-job-title mb-2">About the job</p>
                     <p>
                       At Pak Translations, we have recently been receiving
                       requests for projects concerning African languages. We
@@ -317,49 +311,46 @@
                     </p>
                   </div>
                 </div>
-              </div>
-            </div>
 
-            <div class="row">
-              <div class="col-xl-11 col-lg-9 mt-4 px-5">
-                <div class="job-alerts">
-                  <label for="">Payment</label>
-                  <div class="job-alerts-card-body d-flex w-50 justify-content-between">
+                <div class="job-alerts mb-3">
+                  <label for="" class="finished-job-desc">Payment</label>
+                  <div
+                    class="job-alerts-card-body d-flex w-50 justify-content-between"
+                  >
                     <p class="money-payed">$2000</p>
-                    <span class="text-success">Confirmed</span>
+                    <span class="confirmed-status">Confirmed</span>
                   </div>
-                  
-                </div>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-xl-11 col-lg-9 mt-4 px-5 d-flex justify-content-between">
-                <div class="lang-service-offered col-xl-6">
-                <label for="">Language and Services Offered</label>
-                <p class="service-offered">Translation</p>
-                <div>
-                    <span class="mr-3 job-alerts-lang"> French </span>
-                    <span class="mr-3 job-alerts-lang"> English </span>
-                    <span class="mr-3 job-alerts-lang"> English </span>
-                    <span class="mr-3 job-alerts-lang"> English </span>
-                </div>
                 </div>
 
-                <div class="col-xl-5 lang-service-offered">
-                    <label for="">Duration</label>
+                <div class="d-flex justify-content-between mb-3">
+                  <div class="lang-service-offered col-xl-6">
+                    <label class="finished-job-desc"
+                      >Languages and Services Offered</label
+                    >
+                    <p class="service-offered">Translation</p>
+                    <div>
+                      <span class="mr-3 job-alerts-lang"> French </span>
+                      <span class="mr-3 job-alerts-lang"> English </span>
+                      <span class="mr-3 job-alerts-lang"> English </span>
+                      <span class="mr-3 job-alerts-lang"> English </span>
+                    </div>
+                  </div>
+
+                  <div class="col-xl-5 lang-service-offered">
+                    <label class="finished-job-desc">Duration</label>
                     <p class="service-offered-duration">3 Weeks</p>
-                    <p class="service-offered-date">Kick off - 7th September, 2022</p>
-                    <p class="service-offered-date">Delivery - 10th September, 2022</p>
+                    <p class="service-offered-date">
+                      Kick off - 7th September, 2022
+                    </p>
+                    <p class="service-offered-date">
+                      Delivery - 10th September, 2022
+                    </p>
+                  </div>
                 </div>
-              </div>
-            </div>
 
-            <div class="row">
-              <div class="col-xl-11 col-lg-9 mt-4 px-5">
-                <div class="finished-jobs-attach">
-                  <label for="">Submitted Files</label>
-                <div class="mt-2">
+                <div class="finished-jobs-attach mb-3">
+                  <label class="finished-job-desc">Submitted Files</label>
+                  <div class="mt-2">
                     <div class="job-attc">
                       <img
                         src="assets/icons/vscode-icons_file-type.svg"
@@ -402,60 +393,98 @@
                     </div>
                   </div>
                 </div>
-                
-              </div>
-            </div>
 
-            <div class="row">
-              <div class="col-xl-11 col-lg-9 mt-4 px-5">
                 <div class="client-review">
-                  <label for="">Client Review</label>
-                <div class="d-flex align-item-center mb-4">
+                  <label class="finished-job-desc">Client Review</label>
+                  <div class="d-flex align-item-center mb-4">
                     <div class="client-profile-photo">
-                      <img src="assets/images/client-profile-img.svg" alt="client-profile">
+                      <img
+                        src="assets/images/client-profile-img.svg"
+                        alt="client-profile"
+                      />
                     </div>
                     <div class="ml-3">
-                        <p class="client-profile-name">Godwin Uchenna</p>
-                        <p class="client-profile-location">Lagos, Nigeria</p>
+                      <p class="client-profile-name">Godwin Uchenna</p>
+                      <p class="client-profile-location">Lagos, Nigeria</p>
                     </div>
-                </div>
-                <div class="client-rating-review">
+                  </div>
+                  <div class="client-rating-review">
                     <div class="client-rating">
                       <p class="client-rating-label">Ratings</p>
-                      <img src="" alt="rating">
+                      <img src="assets/icons/rating stars.svg" alt="rating" />
                       <p>100% Client Satisfaction</p>
                     </div>
 
                     <div class="client-comments">
                       <p class="client-rating-label">Comments</p>
-                      <p>We are, thus, looking to expand our database of freelance translators, transcribers, and subtitlers</p>
+                      <p>
+                        We are, thus, looking to expand our database of
+                        freelance translators, transcribers, and subtitlers
+                      </p>
                     </div>
 
                     <div class="client-request">
                       <p class="client-rating-label">Revision Requests</p>
                       <p>0</p>
                     </div>
-                </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+
+          <div
+            class="modal fade"
+            id="logoutModal"
+            data-backdrop="static"
+            data-keyboard="false"
+            tabindex="-1"
+            aria-labelledby="staticBackdropLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content logoutModal">
+                <div class="modal-header">
+                  <p class="modal-title" id="logoutModalLabel">
+                    Log out of iVoice Africa?
+                  </p>
+                </div>
+                <div class="modal-body logoutModal-body">
+                  You can log in anytime with your email and password
+                </div>
+                <div class="modal-footer logoutModal-footer">
+                  <a href="sign-in.html">
+                    <button class="transparentBtn" data-dismiss="modal">
+                      Logout
+                    </button>
+                  </a>
+                  <button
+                    class="logoutBtn"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    Cancel
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- jquery latest version -->
+          <script src="assets/JS/js/vendor/jquery-2.2.4.min.js"></script>
+          <!-- bootstrap 4 js -->
+          <script src="assets/JS/js/popper.min.js"></script>
+          <script src="assets/JS/js/bootstrap.min.js"></script>
+          <script src="assets/JS/js/owl.carousel.min.js"></script>
+          <script src="assets/JS/js/metisMenu.min.js"></script>
+          <script src="assets/JS/js/jquery.slimscroll.min.js"></script>
+          <script src="assets/JS/js/jquery.slicknav.min.js"></script>
+
+          <!-- others plugins -->
+          <script src="assets/JS/js/plugins.js"></script>
+          <script src="assets/JS/js/scripts.js"></script>
         </div>
       </div>
     </div>
-
-   <!-- jquery latest version -->
-   <script src="assets/JS/js/vendor/jquery-2.2.4.min.js"></script>
-   <!-- bootstrap 4 js -->
-   <script src="assets/JS/js/popper.min.js"></script>
-   <script src="assets/JS/js/bootstrap.min.js"></script>
-   <script src="assets/JS/js/owl.carousel.min.js"></script>
-   <script src="assets/JS/js/metisMenu.min.js"></script>
-   <script src="assets/JS/js/jquery.slimscroll.min.js"></script>
-   <script src="assets/JS/js/jquery.slicknav.min.js"></script>
-
-   <!-- others plugins -->
-   <script src="assets/JS/js/plugins.js"></script>
-   <script src="assets/JS/js/scripts.js"></script>
   </body>
 </html>

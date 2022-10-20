@@ -39,22 +39,20 @@
       <!-- Header area start -->
 
       <div class="header-area">
-        <div class="row">
-          <div
-            class="sidebar-header col-md-2 col-lg-2 col-sm-4 d-flex align-items-center"
-          >
+        <div class="headerarea-divder">
+          <div class="sidebar-header d-flex align-items-center">
             <div class="nav-btn pull-left">
               <img src="assets/icons/menu-open.svg" alt="menu-open" />
             </div>
             <div class="ml-5 logo">
-              <a href="index.html"
+              <a href="dashboard.html"
                 ><img src="assets/images/ivoiceafrica logo 1.png" alt="logo"
               /></a>
             </div>
           </div>
           <!-- Searchbar and notification start -->
           <div
-            class="col-md-8 col-sm-4 col-lg-10 clearfix d-flex align-items-center justify-content-between"
+            class="d-flex align-items-center big-margin justify-content-between w-72"
           >
             <div class="search-box pull-left">
               <form action="#">
@@ -68,10 +66,8 @@
               </form>
             </div>
 
-            <div class="clearfix col-lg-4">
-              <div
-                class="notification-area pull-right d-flex align-items-center"
-              >
+            <div>
+              <div class="notification-area">
                 <button class="text-center" type="button">
                   <span class="material-symbols-outlined"> notifications </span>
                   <p>Notifications</p>
@@ -135,28 +131,28 @@
       </div>
       <!-- Header area end -->
 
-      <div class="main-content container-fluid">
-        <div class="row">
-          <div class="sidebar-menu col-lg-2 col-xl-2">
+      <div class="main-content">
+        <div class="page-divider">
+          <div class="sidebar-menu">
             <!-- sidebar menu area start -->
             <div class="main-menu">
-              <div class="menu-inner">
+              <div>
                 <nav>
                   <ul class="metismenu" id="menu">
                     <li class="active">
-                      <a href="javascript:void(0)" aria-expanded="true"
+                      <a href="dashboard.html" aria-expanded="true"
                         ><span
                           class="material-symbols-outlined material-icon orange600"
                         >
                           grid_view </span
-                        ><span>dashboard</span></a
+                        ><span class="title-medium-font">dashboard</span></a
                       >
                     </li>
                     <li>
                       <a href="javascript:void(0)" aria-expanded="true"
                         ><span class="material-symbols-outlined material-icon">
                           work </span
-                        ><span>Jobs </span></a
+                        ><span class="title-medium-font">Jobs</span></a
                       >
                       <ul class="collapse">
                         <li><a href="jobalerts.html">Job alerts</a></li>
@@ -170,29 +166,33 @@
                       <a href="Finances.html" aria-expanded="true"
                         ><span class="material-symbols-outlined material-icon">
                           payments </span
-                        ><span>Finances</span></a
+                        ><span class="title-medium-font">Finances</span></a
                       >
                     </li>
                     <li>
                       <a href="faqs.html" aria-expanded="true"
                         ><span class="material-symbols-outlined material-icon">
                           quiz </span
-                        ><span>FAQs</span></a
+                        ><span class="title-medium-font">FAQs</span></a
                       >
                     </li>
                     <li>
-                      <a href="Profile.html" aria-expanded="true"
+                      <a href="profile.html" aria-expanded="true"
                         ><span class="material-symbols-outlined material-icon">
                           account_box </span
-                        ><span>Profile</span></a
+                        ><span class="title-medium-font">Profile</span></a
                       >
                     </li>
                     <li>
-                      <a href="javascript:void(0)" aria-expanded="true"
+                      <a
+                        href="#"
+                        aria-expanded="true"
+                        data-toggle="modal"
+                        data-target="#logoutModal"
                         ><span class="material-symbols-outlined material-icon">
                           logout
                         </span>
-                        <span>Logout</span></a
+                        <span class="title-medium-font">Logout</span></a
                       >
                     </li>
                   </ul>
@@ -201,30 +201,30 @@
             </div>
             <!-- sidebar menu area end -->
           </div>
+          <!-- sidebar menu area end -->
 
-          <div class="col-lg-10">
-            <div class="row job-alert-heading">
-              <div
-                class="col-xl-10 col-lg-12 pl-5 d-flex"
-              >
-                <div class="job-alert-heading-first col-lg-6">
+          <div class="main-pagecontent">
+            <div class="job-alert-heading">
+              <div class="bigger-margin d-flex w-84 justify-content-between">
+                <div class="job-alert-heading-first">
                   <span>Finished Jobs</span>
                 </div>
-                <div class="job-alert-filter col-lg-7 text-lg-right">
-                  <span>Sort by</span>
-                  <select name="" id="" class="ml-3">
-                    <option value="" selected>Last 7 days</option>
-                    <option value="">Language</option>
-                    <option value="">Date</option>
+
+                <div class="trans-finance-filter">
+                  <span>Transaction type</span>
+                  <select name="" id="">
+                    <option value="">All</option>
+                    <option value="">All</option>
+                    <option value="">All</option>
                   </select>
                 </div>
               </div>
             </div>
 
             <!-- job alerts area start -->
-            <a href="finishedjobs2.html">
-              <div class="row">
-                <div class="col-xl-11 col-lg-9 mt-4 px-5">
+            <div class="bigger-margin">
+              <div class="mt-4 w-90">
+                <a href="finishedjobs2.html">
                   <div class="job-alerts">
                     <div class="job-alerts-card-body my-3">
                       <div
@@ -273,185 +273,170 @@
                       </div>
                     </div>
                   </div>
-                </div>
+                </a>
               </div>
-            </a>
 
-            <div class="row">
-              <div class="col-xl-11 col-lg-9 mt-4 px-5">
-                <div class="job-alerts">
-                  <div class="job-alerts-card-body my-3">
-                    <div
-                      class="d-flex justify-content-between align-items-center mb-4"
-                    >
-                      <div>
-                        <span class="mr-3 job-alerts-translation">
-                          <div
-                            class="mr-2 job-alerts-service-translation-color"
-                          ></div>
-                          Translation
-                        </span>
-                        <span class="mr-3 job-alerts-lang"> French </span>
-                        <span class="mr-3 job-alerts-lang"> English </span>
-                      </div>
-                    </div>
-                    <h2 class="job-alert-card-body-title mb-3">
-                      Translate Physics textbook from English Languague to
-                      French
-                    </h2>
 
-                    <div class="job-alerts-footer">
-                      <div class="d-flex align-items-center mb-3">
-                        <div class="mr-3 d-flex">
-                          <span class="material-symbols-outlined mr-2"
-                            >timer</span
-                          >
-                          <span>3 days</span>
-                        </div>
-                        <div class="mr-3 d-flex">
-                          <span class="material-symbols-outlined mr-2"
-                            >attach_file</span
-                          >
-                          <span>4 <span>PDFs</span></span>
-                        </div>
-                        <div class="mr-3 d-flex">
-                          <span class="material-symbols-outlined mr-2"
-                            >payments</span
-                          >
-                          <span>$400</span>
+              <div class="mt-4 w-90">
+                <a href="finishedjobs2.html">
+                  <div class="job-alerts">
+                    <div class="job-alerts-card-body my-3">
+                      <div
+                        class="d-flex justify-content-between align-items-center mb-4"
+                      >
+                        <div>
+                          <span class="mr-3 job-alerts-translation">
+                            <div
+                              class="mr-2 job-alerts-service-translation-color"
+                            ></div>
+                            Translation
+                          </span>
+                          <span class="mr-3 job-alerts-lang"> French </span>
+                          <span class="mr-3 job-alerts-lang"> English </span>
                         </div>
                       </div>
-                      <div class="job-alert-service-time">
-                        <p>Completed 10th September 2022</p>
+                      <h2 class="job-alert-card-body-title mb-3">
+                        Translate Physics textbook from English Languague to
+                        French
+                      </h2>
+
+                      <div class="job-alerts-footer">
+                        <div class="d-flex align-items-center mb-3">
+                          <div class="mr-3 d-flex">
+                            <span class="material-symbols-outlined mr-2"
+                              >timer</span
+                            >
+                            <span>3 days</span>
+                          </div>
+                          <div class="mr-3 d-flex">
+                            <span class="material-symbols-outlined mr-2"
+                              >attach_file</span
+                            >
+                            <span>4 <span>PDFs</span></span>
+                          </div>
+                          <div class="mr-3 d-flex">
+                            <span class="material-symbols-outlined mr-2"
+                              >payments</span
+                            >
+                            <span>$400</span>
+                          </div>
+                        </div>
+                        <div class="job-alert-service-time">
+                          <p>Completed 10th September 2022</p>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
+                </a>
               </div>
-            </div>
 
-            <div class="row">
-              <div class="col-xl-11 col-lg-9 mt-4 px-5">
-                <div class="job-alerts">
-                  <div class="job-alerts-card-body my-3">
-                    <div
-                      class="d-flex justify-content-between align-items-center mb-4"
-                    >
-                      <div>
-                        <span class="mr-3 job-alerts-translation">
-                          <div
-                            class="mr-2 job-alerts-service-translation-color"
-                          ></div>
-                          Translation
-                        </span>
-                        <span class="mr-3 job-alerts-lang"> French </span>
-                        <span class="mr-3 job-alerts-lang"> English </span>
-                      </div>
-                    </div>
-                    <h2 class="job-alert-card-body-title mb-3">
-                      Translate Physics textbook from English Languague to
-                      French
-                    </h2>
-
-                    <div class="job-alerts-footer">
-                      <div class="d-flex align-items-center mb-3">
-                        <div class="mr-3 d-flex">
-                          <span class="material-symbols-outlined mr-2"
-                            >timer</span
-                          >
-                          <span>3 days</span>
-                        </div>
-                        <div class="mr-3 d-flex">
-                          <span class="material-symbols-outlined mr-2"
-                            >attach_file</span
-                          >
-                          <span>4 <span>PDFs</span></span>
-                        </div>
-                        <div class="mr-3 d-flex">
-                          <span class="material-symbols-outlined mr-2"
-                            >payments</span
-                          >
-                          <span>$400</span>
+              <div class="mt-4 w-90">
+                <a href="finishedjobs2.html">
+                  <div class="job-alerts">
+                    <div class="job-alerts-card-body my-3">
+                      <div
+                        class="d-flex justify-content-between align-items-center mb-4"
+                      >
+                        <div>
+                          <span class="mr-3 job-alerts-translation">
+                            <div
+                              class="mr-2 job-alerts-service-translation-color"
+                            ></div>
+                            Translation
+                          </span>
+                          <span class="mr-3 job-alerts-lang"> French </span>
+                          <span class="mr-3 job-alerts-lang"> English </span>
                         </div>
                       </div>
-                      <div class="job-alert-service-time">
-                        <p>Completed 10th September 2022</p>
+                      <h2 class="job-alert-card-body-title mb-3">
+                        Translate Physics textbook from English Languague to
+                        French
+                      </h2>
+
+                      <div class="job-alerts-footer">
+                        <div class="d-flex align-items-center mb-3">
+                          <div class="mr-3 d-flex">
+                            <span class="material-symbols-outlined mr-2"
+                              >timer</span
+                            >
+                            <span>3 days</span>
+                          </div>
+                          <div class="mr-3 d-flex">
+                            <span class="material-symbols-outlined mr-2"
+                              >attach_file</span
+                            >
+                            <span>4 <span>PDFs</span></span>
+                          </div>
+                          <div class="mr-3 d-flex">
+                            <span class="material-symbols-outlined mr-2"
+                              >payments</span
+                            >
+                            <span>$400</span>
+                          </div>
+                        </div>
+                        <div class="job-alert-service-time">
+                          <p>Completed 10th September 2022</p>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-xl-11 col-lg-9 mt-4 px-5">
-                <div class="job-alerts">
-                  <div class="job-alerts-card-body my-3">
-                    <div
-                      class="d-flex justify-content-between align-items-center mb-4"
-                    >
-                      <div>
-                        <span class="mr-3 job-alerts-translation">
-                          <div
-                            class="mr-2 job-alerts-service-translation-color"
-                          ></div>
-                          Translation
-                        </span>
-                        <span class="mr-3 job-alerts-lang"> French </span>
-                        <span class="mr-3 job-alerts-lang"> English </span>
-                      </div>
-                    </div>
-                    <h2 class="job-alert-card-body-title mb-3">
-                      Translate Physics textbook from English Languague to
-                      French
-                    </h2>
-
-                    <div class="job-alerts-footer">
-                      <div class="d-flex align-items-center mb-3">
-                        <div class="mr-3 d-flex">
-                          <span class="material-symbols-outlined mr-2"
-                            >timer</span
-                          >
-                          <span>3 days</span>
-                        </div>
-                        <div class="mr-3 d-flex">
-                          <span class="material-symbols-outlined mr-2"
-                            >attach_file</span
-                          >
-                          <span>4 <span>PDFs</span></span>
-                        </div>
-                        <div class="mr-3 d-flex">
-                          <span class="material-symbols-outlined mr-2"
-                            >payments</span
-                          >
-                          <span>$400</span>
-                        </div>
-                      </div>
-                      <div class="job-alert-service-time">
-                        <p>Completed 10th September 2022</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                </a>
               </div>
             </div>
           </div>
         </div>
       </div>
+
+      <div
+            class="modal fade"
+            id="logoutModal"
+            data-backdrop="static"
+            data-keyboard="false"
+            tabindex="-1"
+            aria-labelledby="staticBackdropLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content logoutModal">
+                <div class="modal-header">
+                  <p class="modal-title" id="logoutModalLabel">
+                    Log out of iVoice Africa?
+                  </p>
+                </div>
+                <div class="modal-body logoutModal-body">
+                  You can log in anytime with your email and password
+                </div>
+                <div class="modal-footer logoutModal-footer">
+                  <a href="sign-in.html">
+                    <button class="transparentBtn" data-dismiss="modal">
+                      Logout
+                    </button>
+                  </a>
+                  <button
+                    class="logoutBtn"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    Cancel
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+      <!-- jquery latest version -->
+      <script src="assets/JS/js/vendor/jquery-2.2.4.min.js"></script>
+      <!-- bootstrap 4 js -->
+      <script src="assets/JS/js/popper.min.js"></script>
+      <script src="assets/JS/js/bootstrap.min.js"></script>
+      <script src="assets/JS/js/owl.carousel.min.js"></script>
+      <script src="assets/JS/js/metisMenu.min.js"></script>
+      <script src="assets/JS/js/jquery.slimscroll.min.js"></script>
+      <script src="assets/JS/js/jquery.slicknav.min.js"></script>
+
+      <!-- others plugins -->
+      <script src="assets/JS/js/plugins.js"></script>
+      <script src="assets/JS/js/scripts.js"></script>
     </div>
-
-    <!-- jquery latest version -->
-    <script src="assets/JS/js/vendor/jquery-2.2.4.min.js"></script>
-    <!-- bootstrap 4 js -->
-    <script src="assets/JS/js/popper.min.js"></script>
-    <script src="assets/JS/js/bootstrap.min.js"></script>
-    <script src="assets/JS/js/owl.carousel.min.js"></script>
-    <script src="assets/JS/js/metisMenu.min.js"></script>
-    <script src="assets/JS/js/jquery.slimscroll.min.js"></script>
-    <script src="assets/JS/js/jquery.slicknav.min.js"></script>
-
-    <!-- others plugins -->
-    <script src="assets/JS/js/plugins.js"></script>
-    <script src="assets/JS/js/scripts.js"></script>
   </body>
 </html>

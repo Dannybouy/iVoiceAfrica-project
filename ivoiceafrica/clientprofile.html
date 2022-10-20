@@ -3,8 +3,9 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>Dashboard</title>
+    <title>Client Profile</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <link rel="stylesheet" href="assets/CSS/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/CSS/css/metisMenu.css" />
     <link rel="stylesheet" href="assets/CSS/css/slicknav.min.css" />
@@ -24,12 +25,14 @@
     <link rel="stylesheet" href="assets/CSS/css/default-css.css" />
     <link rel="stylesheet" href="assets/CSS/css/styles.css" />
     <link rel="stylesheet" href="assets/CSS/css/responsive.css" />
+    <link rel="stylesheet" href="assets/CSS/css/finance.css" />
+
     <!-- modernizr css -->
     <script src="assets/JS/js/vendor/modernizr-2.8.3.min.js"></script>
     <script src="assets/JS/js/scripts.js" defer></script>
   </head>
 
-<body>
+  <body>
     <div id="preloader">
       <div class="loader"></div>
     </div>
@@ -40,14 +43,12 @@
 
       <div class="header-area">
         <div class="headerarea-divder">
-          <div
-            class="sidebar-header d-flex align-items-center"
-          >
+          <div class="sidebar-header d-flex align-items-center">
             <div class="nav-btn pull-left">
               <img src="assets/icons/menu-open.svg" alt="menu-open" />
             </div>
             <div class="ml-5 logo">
-              <a href="dashboard.html"
+              <a href="newrequest.html"
                 ><img src="assets/images/ivoiceafrica logo 1.png" alt="logo"
               /></a>
             </div>
@@ -69,14 +70,14 @@
             </div>
 
             <div>
-              <div
-                class="notification-area"
-              >
-
-                <button class="text-center" type="button">
+              <div class="notification-area d-flex">
+                <a
+                  href="clientnotification.html"
+                  class="text-center notification-btn"
+                >
                   <span class="material-symbols-outlined"> notifications </span>
                   <p>Notifications</p>
-                </button>
+                </a>
 
                 <button
                   class="text-center ml-5"
@@ -141,16 +142,16 @@
           <div class="sidebar-menu">
             <!-- sidebar menu area start -->
             <div class="main-menu">
-              <div class="">
+              <div>
                 <nav>
                   <ul class="metismenu" id="menu">
                     <li class="active">
-                      <a href="dashboard.html" aria-expanded="true"
+                      <a href="newrequest.html" aria-expanded="true"
                         ><span
                           class="material-symbols-outlined material-icon orange600"
                         >
                           grid_view </span
-                        ><span class="title-medium-font">dashboard</span></a
+                        ><span class="title-medium-font">New Request</span></a
                       >
                     </li>
                     <li>
@@ -160,36 +161,41 @@
                         ><span class="title-medium-font">Jobs</span></a
                       >
                       <ul class="collapse">
-                        <li><a href="jobalerts.html">Job alerts</a></li>
+                        <li><a href="clientrequests.html">Request</a></li>
                         <li>
-                          <a href="activejobs.html">Active Jobs</a>
+                          <a href="clientbids.html">Bids</a>
                         </li>
-                        <li><a href="finishedjobs.html">Finished Jobs</a></li>
+                        <li><a href="inprogress.html">In Progress</a></li>
+                        <li><a href="clientfinished.html">Finished</a></li>
                       </ul>
                     </li>
                     <li>
-                      <a href="Finances.html" aria-expanded="true"
+                      <a href="clientfinance.html" aria-expanded="true"
                         ><span class="material-symbols-outlined material-icon">
                           payments </span
                         ><span class="title-medium-font">Finances</span></a
                       >
                     </li>
                     <li>
-                      <a href="faqs.html" aria-expanded="true"
+                      <a href="clientfaqs.html" aria-expanded="true"
                         ><span class="material-symbols-outlined material-icon">
                           quiz </span
                         ><span class="title-medium-font">FAQs</span></a
                       >
                     </li>
                     <li>
-                      <a href="profile.html" aria-expanded="true"
+                      <a href="clientprofile.html" aria-expanded="true"
                         ><span class="material-symbols-outlined material-icon">
                           account_box </span
                         ><span class="title-medium-font">Profile</span></a
                       >
                     </li>
                     <li>
-                      <a href="javascript:void(0)" aria-expanded="true"
+                      <a
+                        href="#"
+                        aria-expanded="true"
+                        data-toggle="modal"
+                        data-target="#logoutModal"
                         ><span class="material-symbols-outlined material-icon">
                           logout
                         </span>
@@ -204,80 +210,132 @@
           </div>
 
           <div class="main-pagecontent">
+            <div class="job-alert-heading">
+              <div class="bigger-margin d-flex justify-content-between">
+                <div class="job-alert-heading-first">
+                  <span>Profile</span>
+                </div>
+              </div>
+            </div>
 
-            <div class="job-alert-heading dashboard-heading">
-              <div class="d-flex align-items-center activejobs-heading bigger-margin">
-                  <span>Notifications</span>
+            <!-- job alerts area start -->
+            <div class="bigger-margin mt-3">
+              <div>
+                <div class="mt-4 w-90 clientprofile">
+                  <div class="clientphoto">
+                    <p>Profile Picture</p>
+                    <div class="picture-area">
+                      <img
+                        src="assets/images/client_profile-2.svg"
+                        alt="client-profile"
+                        id="client-profile"
+                      />
+                    </div>
+                    <input
+                      type="file"
+                      name="clientProfileBtn"
+                      id="clientProfileBtn"
+                      hidden
+                    />
+                    <label for="clientProfileBtn" class="clientProfileBtn">
+                      Replace
+                      <span class="material-symbols-outlined ml-2">
+                        find_replace
+                      </span>
+                    </label>
+                  </div>
+
+                  <form action="" class="clientprofileupdate">
+                    <div class="clientform-section1 mb-4">
+
+                      <div>
+                        <label for="firstname">First name</label>
+                        <input type="text" placeholder="Ex: John"/>
+                      </div>
+                      <div>
+                        <label for="firstname">Last name</label>
+                        <input type="text" placeholder="Ex: John"/>
+                      </div>
+                    </div>
+
+                    <div class="clientform-section2 mb-4">
+                      <label for="sex">Sex</label>
+                      <select name="sex" id="sex">
+                        <option value="male">Male</option>
+                        <option value="female">Fenale</option>
+                      </select>
+                    </div>
+
+                    <label for="address">Address</label>
+
+                    <div class="clientform-section3 mb-4">
+                      <label for="street address">Street address</label>
+                      <input type="text" />
+
+                      <div class="mt-4 clientform-section4">
+                        <div>
+                          <label for="town">Town/Village</label>
+                          <input type="text" />
+                        </div>
+                        <div>
+                          <label for="coutry">Country of Residence</label>
+                          <input type="text" />
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="clientform-section5 mb-5">
+                      <label for="phone-number">Phone number</label>
+                      <div>
+                        <select name="flag" id="flag" class="mr-4">
+                            <option value="NGN">NGN</option>
+                            <option value="NGN">NGN</option>
+                            <option value="NGN">NGN</option>
+                          </select>
+                          <input type="text" id="phone-number" placeholder="+234 903 919 7553"/>
+                      </div>
+                    </div>
+
+                    <input type="submit" value="Update" class="uploadbtn d-flex">
+                  </form>
+                </div>
+              </div>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
 
-          <div class="arrow_back_link"><a href="dashboard.html">
-            <img src="assets/icons/arrow_back_link.svg" alt="arrow_back_link">
-          </a></div>
-          <div class="bigger-margin">
-            <div class=" mt-4 w-90">
-                <div class="job-alerts d-flex align-items-center justify-content-between  ">
-                    <div class="job-alerts-card-body my-2 w-75">
-                     <p class="mb-1"><span>Godwin</span> would like to work with you</p>
-                      <h2 class="job-alert-card-body-title mb-3">
-                        Translate Physics textbook from English Languague to
-                        French
-                      </h2>
-                    </div>
-                    <span class="notification-time">4 hours ago</span>
-                  </div>
-            </div>
-            <div class=" mt-4 w-90">
-                <div class="job-alerts d-flex align-items-center justify-content-between  ">
-                    <div class="job-alerts-card-body my-2 w-75">
-                     <p class="mb-1"><span>Godwin</span> would like to work with you</p>
-                      <h2 class="job-alert-card-body-title mb-3">
-                        Translate Physics textbook from English Languague to
-                        French
-                      </h2>
-                    </div>
-                    <span class="notification-time">4 hours ago</span>
-                  </div>
-            </div>
-            <div class=" mt-4 w-90">
-                <div class="job-alerts d-flex align-items-center justify-content-between  ">
-                    <div class="job-alerts-card-body my-2 w-75">
-                     <p class="mb-1"><span>Godwin</span> would like to work with you</p>
-                      <h2 class="job-alert-card-body-title mb-3">
-                        Translate Physics textbook from English Languague to
-                        French
-                      </h2>
-                    </div>
-                    <span class="notification-time">4 hours ago</span>
-                  </div>
-            </div>
-            <div class=" mt-4 w-90">
-                <div class="job-alerts d-flex align-items-center justify-content-between  ">
-                    <div class="job-alerts-card-body my-2 w-75">
-                     <p class="mb-1"><span>Godwin</span> would like to work with you</p>
-                      <h2 class="job-alert-card-body-title mb-3">
-                        Translate Physics textbook from English Languague to
-                        French
-                      </h2>
-                    </div>
-                    <span class="notification-time">4 hours ago</span>
-                  </div>
-            </div>
-            <div class=" mt-4 w-90">
-                <div class="job-alerts d-flex align-items-center justify-content-between  ">
-                    <div class="job-alerts-card-body my-2 w-75">
-                     <p class="mb-1"><span>Godwin</span> would like to work with you</p>
-                      <h2 class="job-alert-card-body-title mb-3">
-                        Translate Physics textbook from English Languague to
-                        French
-                      </h2>
-                    </div>
-                    <span class="notification-time">4 hours ago</span>
-                  </div>
-            </div>
+    <!-- logout Modal -->
+    <div
+      class="modal fade"
+      id="logoutModal"
+      data-backdrop="static"
+      data-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content logoutModal">
+          <div class="modal-header">
+            <p class="modal-title" id="logoutModalLabel">
+              Log out of iVoice Africa?
+            </p>
           </div>
-
-          
+          <div class="modal-body logoutModal-body">
+            You can log in anytime with your email and password
+          </div>
+          <div class="modal-footer logoutModal-footer">
+            <a href="sign-in.html">
+              <button class="transparentBtn" data-dismiss="modal">
+                Logout
+              </button>
+            </a>
+            <button class="logoutBtn" data-dismiss="modal" aria-label="Close">
+              Cancel
+            </button>
+          </div>
         </div>
       </div>
     </div>
@@ -295,6 +353,5 @@
     <!-- others plugins -->
     <script src="assets/JS/js/plugins.js"></script>
     <script src="assets/JS/js/scripts.js"></script>
-
   </body>
 </html>

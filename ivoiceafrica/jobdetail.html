@@ -26,7 +26,7 @@
     <link rel="stylesheet" href="assets/CSS/css/styles.css" />
     <link rel="stylesheet" href="assets/CSS/css/responsive.css" />
     <!-- modernizr css -->
-    <script src="assets/JS/js/vendor/modernizr-2.8.3.min.js"></script>
+    <script src="assets/JS/js/vendor/modernizr-2.8.3.min.js" defer></script>
     <script src="assets/JS/js/scripts.js" defer></script>
   </head>
 
@@ -42,10 +42,8 @@
       <!-- Header area start -->
 
       <div class="header-area">
-        <div class="row">
-          <div
-            class="sidebar-header col-md-2 col-lg-2 col-sm-4 d-flex align-items-center"
-          >
+        <div class="headerarea-divder">
+          <div class="sidebar-header d-flex align-items-center">
             <div class="nav-btn pull-left">
               <img src="assets/icons/menu-open.svg" alt="menu-open" />
             </div>
@@ -57,9 +55,9 @@
           </div>
           <!-- Searchbar and notification start -->
           <div
-            class="col-md-8 col-sm-4 col-lg-10 clearfix d-flex align-items-center justify-content-between"
+            class="d-flex align-items-center big-margin w-70 justify-content-between"
           >
-            <div class="search-box pull-left col-lg-6">
+            <div class="search-box pull-left">
               <form action="#">
                 <i class="ti-search"></i>
                 <input
@@ -71,7 +69,7 @@
               </form>
             </div>
 
-            <div class="clearfix col-lg-4">
+            <div class="clearfix">
               <div
                 class="notification-area pull-right d-flex align-items-center"
               >
@@ -138,12 +136,12 @@
       </div>
       <!-- Header area end -->
 
-      <div class="main-content container-fluid">
-        <div class="row">
-          <div class="sidebar-menu col-lg-2">
+      <div class="main-content">
+        <div class="page-divider">
+          <div class="sidebar-menu">
             <!-- sidebar menu area start -->
             <div class="main-menu">
-              <div class="menu-inner">
+              <div class="">
                 <nav>
                   <ul class="metismenu" id="menu">
                     <li class="active">
@@ -152,14 +150,14 @@
                           class="material-symbols-outlined material-icon orange600"
                         >
                           grid_view </span
-                        ><span>dashboard</span></a
+                        ><span class="title-medium-font">dashboard</span></a
                       >
                     </li>
                     <li>
                       <a href="javascript:void(0)" aria-expanded="true"
                         ><span class="material-symbols-outlined material-icon">
                           work </span
-                        ><span>Jobs</span></a
+                        ><span class="title-medium-font">Jobs</span></a
                       >
                       <ul class="collapse">
                         <li><a href="jobalerts.html">Job alerts</a></li>
@@ -173,21 +171,21 @@
                       <a href="Finances.html" aria-expanded="true"
                         ><span class="material-symbols-outlined material-icon">
                           payments </span
-                        ><span>Finances</span></a
+                        ><span class="title-medium-font">Finances</span></a
                       >
                     </li>
                     <li>
                       <a href="faqs.html" aria-expanded="true"
                         ><span class="material-symbols-outlined material-icon">
                           quiz </span
-                        ><span>FAQs</span></a
+                        ><span class="title-medium-font">FAQs</span></a
                       >
                     </li>
                     <li>
                       <a href="profile.html" aria-expanded="true"
                         ><span class="material-symbols-outlined material-icon">
                           account_box </span
-                        ><span>Profile</span></a
+                        ><span class="title-medium-font">Profile</span></a
                       >
                     </li>
                     <li>
@@ -195,7 +193,7 @@
                         ><span class="material-symbols-outlined material-icon">
                           logout
                         </span>
-                        <span>Logout</span></a
+                        <span class="title-medium-font">Logout</span></a
                       >
                     </li>
                   </ul>
@@ -205,11 +203,9 @@
             <!-- sidebar menu area end -->
           </div>
 
-          <div class="col-lg-10">
-            <div class="row job-alert-heading">
-              <div
-                class="col-xl-10 col-lg-8 px-5 d-flex justify-content-between"
-              >
+          <div class="main-pagecontent">
+            <div class="job-alert-heading dashboard-heading">
+              <div class="bigger-margin">
                 <div class="job-detail-heading-first">
                   <span class="job-alerts-title-2">Job alerts</span>
                   <span class="job-details-title">Job details</span>
@@ -217,10 +213,19 @@
               </div>
             </div>
 
+            <div class="arrow_back_link">
+              <a href="jobalerts.html">
+                <img
+                  src="assets/icons/arrow_back_link.svg"
+                  alt="arrow_back_link"
+                />
+              </a>
+            </div>
+
             <!-- job alerts area start -->
-            <div class="row">
-              <div class="col-xl-11 col-lg-9 mt-4 px-5">
-                <div class="job-alerts">
+            <div class="bigger-margin mt-4">
+              <div class="w-90">
+                <div class="job-alerts mb-2">
                   <div class="job-alerts-card-body my-3">
                     <div
                       class="d-flex justify-content-between align-items-center mb-4"
@@ -275,234 +280,242 @@
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
 
-            <!-- Payment modal -->
-            <div class="row">
-              <div class="col-xl-11 col-lg-9 mt-4 px-5">
-                <div class="job-alerts job-alerts-client-info">
-                  <span class="job-alerts-client-title d-block mb-1"
-                    >The Client</span
-                  >
-                  <span class="job-alerts-client-name d-block"
-                    >Godwin Uchenna</span
-                  >
-                  <span class="job-alerts-client-location d-block fs-6"
-                    >Lagos, Nigeria</span
-                  >
-                </div>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-xl-11 col-lg-9 mt-4 px-5">
-                <div class="job-details">
-                  <span class="job-details-content-title">Job Details</span>
-
-                  <div class="job-list-details mt-3 d-flex align-items-center">
-                    <div class="job-list-details-active">
-                      <button class="next-btn" id="descTab">Description</button>
-                    </div>
-                    <div>
-                      <button class="next-btn prev-btn" id="devTab">
-                        Deliverables
-                      </button>
-                    </div>
-                    <div>
-                      <button class="next-btn prev-btn" id="attTab">
-                        Attachments
-                      </button>
-                    </div>
-                  </div>
-
-                  <div
-                    class="job-desc my-3 job-details-active"
-                    id="descriptionContent"
-                  >
-                    <span>About the job</span>
-                    <p class="mb-3">
-                      At Pak Translations, we have recently been receiving
-                      requests for projects concerning African languages. We
-                      are, thus, looking to expand our database of freelance
-                      translators, transcribers, and subtitlers of African
-                      languages, especially the minor languages spoken in this
-                      linguistically richest continent.
-                    </p>
-                    <span
-                      >These are the qualities we are looking for in the
-                      freelancer:
-                    </span>
-                    <ul>
-                      <li>
-                        High accuracy (in terms of meaning, punctuation,
-                        grammar, formatting)
-                      </li>
-                      <li>Commitment (people who always deliver on time)</li>
-                      <li>
-                        Responsive (people who respond to emails/calls in time)
-                      </li>
-                    </ul>
-                    <p class="mt-3">
-                      If you have relevant experience and are interested in
-                      joining our pool of freelancers, please share your
-                      profile.
-                    </p>
-                  </div>
-
-                  <div
-                    class="job-deliverables step step-2"
-                    id="delivarablesContent"
-                  >
-                    <div>
-                      <table class="job-deliverables-table">
-                        <thead>
-                          <tr>
-                            <th>Service</th>
-                            <th>Native</th>
-                            <th>Target</th>
-                            <th>Files (Qty)</th>
-                            <th>File size</th>
-                          </tr>
-                        </thead>
-                        <tbody></tbody>
-                        <tr>
-                          <td>Translation</td>
-                          <td>French</td>
-                          <td>English</td>
-                          <td>2</td>
-                          <td>120 pages</td>
-                        </tr>
-
-                        <tr>
-                          <td>Voice-Over</td>
-                          <td>French</td>
-                          <td>English</td>
-                          <td>2</td>
-                          <td>6 hours</td>
-                        </tr>
-
-                        <tr>
-                          <td>Interpretation</td>
-                          <td>French</td>
-                          <td>English</td>
-                          <td>2</td>
-                          <td>6 hours</td>
-                        </tr>
-                      </table>
-                    </div>
-                  </div>
-
-                  <div
-                    class="job-attachments step step-3 mt-5"
-                    id="attachmentContent"
-                  >
-                    <div class="job-attc">
-                      <img
-                        src="assets/icons/vscode-icons_file-type.svg"
-                        alt="file-icon"
-                      />
-                      <div class="ml-3">
-                        <p>Physics textbook in French (01).pdf</p>
-                        <p>
-                          This file is to be translated to an English version
-                        </p>
-                        <p>Uploaded 3 hours ago</p>
-                      </div>
-                    </div>
-                    <div class="job-attc">
-                      <img
-                        src="assets/icons/vscode-icons_file-type.svg"
-                        alt="file-icon"
-                      />
-                      <div class="ml-3">
-                        <p>Physics textbook in French (01).pdf</p>
-                        <p>
-                          This file is to be translated to an English version
-                        </p>
-                        <p>Uploaded 3 hours ago</p>
-                      </div>
-                    </div>
-
-                    <div class="job-attc">
-                      <img
-                        src="assets/icons/vscode-icons_file-type.svg"
-                        alt="file-icon"
-                      />
-                      <div class="ml-3">
-                        <p>Physics textbook in French (01).pdf</p>
-                        <p>
-                          This file is to be translated to an English version
-                        </p>
-                        <p>Uploaded 3 hours ago</p>
-                      </div>
-                    </div>
+                <div class="mb-2">
+                  <div class="job-alerts job-alerts-client-info">
+                    <span class="job-alerts-client-title d-block mb-1"
+                      >The Client</span
+                    >
+                    <span class="job-alerts-client-name d-block"
+                      >Godwin Uchenna</span
+                    >
+                    <span class="job-alerts-client-location d-block fs-6"
+                      >Lagos, Nigeria</span
+                    >
                   </div>
                 </div>
+
+                <div>
+                  <div>
+                    <div class="job-details">
+                      <span class="job-details-content-title">Job Details</span>
+
+                      <div
+                        class="job-list-details mt-3 d-flex align-items-center"
+                      >
+                        <div class="job-list-details-active">
+                          <button class="next-btn" id="descTab">
+                            Description
+                          </button>
+                        </div>
+                        <div>
+                          <button class="next-btn prev-btn" id="devTab">
+                            Deliverables
+                          </button>
+                        </div>
+                        <div>
+                          <button class="next-btn prev-btn" id="attTab">
+                            Attachments
+                          </button>
+                        </div>
+                      </div>
+
+                      <div
+                        class="job-desc my-3 job-details-active"
+                        id="descriptionContent"
+                      >
+                        <span>About the job</span>
+                        <p class="mb-3">
+                          At Pak Translations, we have recently been receiving
+                          requests for projects concerning African languages. We
+                          are, thus, looking to expand our database of freelance
+                          translators, transcribers, and subtitlers of African
+                          languages, especially the minor languages spoken in
+                          this linguistically richest continent.
+                        </p>
+                        <span
+                          >These are the qualities we are looking for in the
+                          freelancer:
+                        </span>
+                        <ul>
+                          <li>
+                            High accuracy (in terms of meaning, punctuation,
+                            grammar, formatting)
+                          </li>
+                          <li>
+                            Commitment (people who always deliver on time)
+                          </li>
+                          <li>
+                            Responsive (people who respond to emails/calls in
+                            time)
+                          </li>
+                        </ul>
+                        <p class="mt-3">
+                          If you have relevant experience and are interested in
+                          joining our pool of freelancers, please share your
+                          profile.
+                        </p>
+                      </div>
+
+                      <div
+                        class="job-deliverables step step-2"
+                        id="delivarablesContent"
+                      >
+                        <div>
+                          <table class="job-deliverables-table">
+                            <thead>
+                              <tr>
+                                <th>Service</th>
+                                <th>Native</th>
+                                <th>Target</th>
+                                <th>Files (Qty)</th>
+                                <th>File size</th>
+                              </tr>
+                            </thead>
+                            <tbody></tbody>
+                            <tr>
+                              <td>Translation</td>
+                              <td>French</td>
+                              <td>English</td>
+                              <td>2</td>
+                              <td>120 pages</td>
+                            </tr>
+
+                            <tr>
+                              <td>Voice-Over</td>
+                              <td>French</td>
+                              <td>English</td>
+                              <td>2</td>
+                              <td>6 hours</td>
+                            </tr>
+
+                            <tr>
+                              <td>Interpretation</td>
+                              <td>French</td>
+                              <td>English</td>
+                              <td>2</td>
+                              <td>6 hours</td>
+                            </tr>
+                          </table>
+                        </div>
+                      </div>
+
+                      <div
+                        class="job-attachments step step-3 mt-5"
+                        id="attachmentContent"
+                      >
+                        <div class="job-attc">
+                          <img
+                            src="assets/icons/vscode-icons_file-type.svg"
+                            alt="file-icon"
+                          />
+                          <div class="ml-3">
+                            <p>Physics textbook in French (01).pdf</p>
+                            <p>
+                              This file is to be translated to an English
+                              version
+                            </p>
+                            <p>Uploaded 3 hours ago</p>
+                          </div>
+                        </div>
+                        <div class="job-attc">
+                          <img
+                            src="assets/icons/vscode-icons_file-type.svg"
+                            alt="file-icon"
+                          />
+                          <div class="ml-3">
+                            <p>Physics textbook in French (01).pdf</p>
+                            <p>
+                              This file is to be translated to an English
+                              version
+                            </p>
+                            <p>Uploaded 3 hours ago</p>
+                          </div>
+                        </div>
+
+                        <div class="job-attc">
+                          <img
+                            src="assets/icons/vscode-icons_file-type.svg"
+                            alt="file-icon"
+                          />
+                          <div class="ml-3">
+                            <p>Physics textbook in French (01).pdf</p>
+                            <p>
+                              This file is to be translated to an English
+                              version
+                            </p>
+                            <p>Uploaded 3 hours ago</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
+
+              <!-- Payment modal -->
             </div>
           </div>
         </div>
       </div>
-    </div>
 
-    -- mobile
-    <div
-      class="modal fade"
-      id="exampleModalCenter"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="exampleModalCenterTitle"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content payment-modal">
-          <div class="modal-header payment-modal-header border-0">
-            <h5 class="modal-title" id="exampleModalLongTitle">
-              State your price
-            </h5>
-            <span
-              >Let Godwin Uchenna Know how much you would like to be paid for
-              this sevice</span
-            >
-          </div>
-          <div class="modal-body payment-modal-body">
-            <div class="payment-modal-input">
-              <div class="payment-money-sign">
-                <img src="assets/images/dollar-sign.svg" alt="dollar-sign" />
-              </div>
-              <input type="text" />
+      <div
+        class="modal fade"
+        id="exampleModalCenter"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content payment-modal">
+            <div class="modal-header payment-modal-header border-0">
+              <h5 class="modal-title" id="exampleModalLongTitle">
+                State your price
+              </h5>
+              <span
+                >Let Godwin Uchenna Know how much you would like to be paid for
+                this sevice</span
+              >
             </div>
-            <small>This must be within the range of $20 - $30 per page</small>
-          </div>
-          <div class="modal-footer border-0">
-            <button
-              type="button"
-              class="btn payment-modal-cancel-btn"
-              data-dismiss="modal"
-            >
-              Cancel
-            </button>
-            <button type="button" class="btn payment-modal-done-btn">
-              Done
-            </button>
+            <div class="modal-body payment-modal-body">
+              <div class="payment-modal-input">
+                <div class="payment-money-sign">
+                  <img src="assets/images/dollar-sign.svg" alt="dollar-sign" />
+                </div>
+                <input type="text" />
+              </div>
+              <small>This must be within the range of $20 - $30 per page</small>
+            </div>
+            <div class="modal-footer border-0">
+              <button
+                type="button"
+                class="btn payment-modal-cancel-btn"
+                data-dismiss="modal"
+              >
+                Cancel
+              </button>
+              <button type="button" class="btn payment-modal-done-btn">
+                Done
+              </button>
+            </div>
           </div>
         </div>
       </div>
+
+      <!-- jquery latest version -->
+      <script src="assets/JS/js/vendor/jquery-2.2.4.min.js"></script>
+      <!-- bootstrap 4 js -->
+      <script src="assets/JS/js/popper.min.js"></script>
+      <script src="assets/JS/js/bootstrap.min.js"></script>
+      <script src="assets/JS/js/owl.carousel.min.js"></script>
+      <script src="assets/JS/js/metisMenu.min.js"></script>
+      <script src="assets/JS/js/jquery.slimscroll.min.js"></script>
+      <script src="assets/JS/js/jquery.slicknav.min.js"></script>
+
+      <!-- others plugins -->
+      <script src="assets/JS/js/plugins.js"></script>
+      <script src="assets/JS/js/scripts.js"></script>
     </div>
-
-    <!-- jquery latest version -->
-    <script src="assets/JS/js/vendor/jquery-2.2.4.min.js"></script>
-    <!-- bootstrap 4 js -->
-    <script src="assets/JS/js/popper.min.js"></script>
-    <script src="assets/JS/js/bootstrap.min.js"></script>
-    <script src="assets/JS/js/owl.carousel.min.js"></script>
-    <script src="assets/JS/js/metisMenu.min.js"></script>
-    <script src="assets/JS/js/jquery.slimscroll.min.js"></script>
-    <script src="assets/JS/js/jquery.slicknav.min.js"></script>
-
-    <!-- others plugins -->
-    <script src="assets/JS/js/plugins.js"></script>
-    <script src="assets/JS/js/scripts.js"></script>
   </body>
 </html>
